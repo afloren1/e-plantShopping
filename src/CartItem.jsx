@@ -35,9 +35,6 @@ const CartItem = ({ onContinueShopping }) => {
     dispatch(removeItem(item.name));
   };
 
-  const handlequantity = (item) => {
-    dispatch(updateQuantity(item.name))
-  };
   const handleCheckoutShopping = (e) => {
     alert('Functionality to be added for future reference');
   };
