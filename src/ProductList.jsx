@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import './ProductList.css'
 import CartItem from './CartItem';
-import addItem from './CartSlice';
+import { addItem } from './CartSlice';
 import { useDispatch, useSelector } from 'react-redux';
 function ProductList() {
     const [showCart, setShowCart] = useState(false); 
@@ -311,7 +311,7 @@ const handlePlantsClick = (e) => {
                     ))}
                 </div>
             ) : (
-                <CartItem onContinueShopping={handleContinueShopping} cartItems={cart} />
+                <CartItem onContinueShopping={handleContinueShopping}/>
             )}
         </div>
     );
