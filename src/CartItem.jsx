@@ -14,7 +14,7 @@ const CartItem = ({ onContinueShopping }) => {
 
   const handleContinueShopping = (e) => {
     e.preventDefault();
-    setShowCart(false);
+    setShowCart(true);
   };
 
 
@@ -41,12 +41,7 @@ const CartItem = ({ onContinueShopping }) => {
 
   // Calculate total cost based on quantity for an item
   const calculateTotalCost = (item) => {
-        let totalCost = 0; 
-        if (item === "plants") { 
-            plantArray.forEach((item) => { 
-                totalCost += item.cost * item.quantity; 
-            }); 
-        }      
+    return item.cost * item.quantity;
   };
 
   return (
