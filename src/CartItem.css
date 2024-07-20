@@ -116,12 +116,12 @@
     height: 200px;
     /* object-fit: contain; */
     margin-right: 20px;
-    margin
-  }
+    margin-left: 12px;
+  } 
   
   .cart-item-details {
     flex-grow: 1;
-  }
+  };
   
   .cart-item-name {
     font-weight: bold;
@@ -242,4 +242,3 @@
     transition: background-color 0.3s ease;
     margin-top: 40px;
   }
-  
