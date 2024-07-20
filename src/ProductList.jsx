@@ -290,7 +290,7 @@ const handlePlantsClick = (e) => {
                 <div className="product-grid">
                     {plantsArray.map((category, index) => (
                         <div key={index}>
-                            <h2>{category.category}</h2>
+                            <h2 className="plant_heading">{category.category}</h2>
                             <div className="product-list">
                                 {category.plants.map((plant, plantIndex) => (
                                     <div key={plantIndex} className="product-card">
@@ -299,7 +299,7 @@ const handlePlantsClick = (e) => {
                                         <div className="product-description">{plant.description}</div>
                                         <div className="product-cost">{plant.cost}</div>
                                         <button
-                                            className="product-button"
+                                            className={`product-button ${addedToCart[plant.name] ? 'added-to-cart' : ''}`}
                                             onClick={() => handleAddToCart(plant)}
                                             disabled={addedToCart[plant.name]}>
                                             {addedToCart[plant.name] ? 'Added to Cart' : 'Add to Cart'}
