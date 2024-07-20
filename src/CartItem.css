@@ -15,6 +15,7 @@
   height: 200px;
   /* object-fit: contain; */
   margin-right: 20px;
+  margin-left: 12px;
 }
 
 .cart-item-details {
@@ -115,6 +116,7 @@
     height: 200px;
     /* object-fit: contain; */
     margin-right: 20px;
+    margin
   }
   
   .cart-item-details {
